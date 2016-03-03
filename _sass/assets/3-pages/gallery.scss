@@ -1,8 +1,11 @@
+
+
 .flexbox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
+  justify-content: center;
 
 }
 
@@ -16,28 +19,28 @@
 }
 
 .music-app{
-  margin-top: 6px;
+
   margin-left:  -5px;
 }
 
 .it-people{
-  margin-top: 6px;
-  margin-left: 5px;
+
+  margin-left: -5px;
 }
 
-.weetabix{
-  margin-top: 6px;
-  margin-left:  -5px;
+.cereais{
+
+  margin-left:  5px;
 }
 
 .imagens-de-marca{
-  margin-top: 6px;
+
   margin-left: 5px;
 }
 // nova stuff
 
 figure.project-thumbnail-image {
-  font-family: 'Playfair Display', Arial, sans-serif;
+  font-family: 'PT sans', Arial, sans-serif;
   position: relative;
   float: left;
   overflow: hidden;
