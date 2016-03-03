@@ -16,21 +16,152 @@
 }
 
 .music-app{
-  margin-top: 5px;
+  margin-top: 6px;
   margin-left:  -5px;
 }
 
 .it-people{
-  margin-top: 5px;
+  margin-top: 6px;
   margin-left: 5px;
 }
 
 .weetabix{
-  margin-top: 5px;
+  margin-top: 6px;
   margin-left:  -5px;
 }
 
 .imagens-de-marca{
-  margin-top: 5px;
+  margin-top: 6px;
   margin-left: 5px;
+}
+// nova stuff
+
+figure.project-thumbnail-image {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  max-height: 220px;
+  width: 100%;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+  background-color: #000000;
+}
+
+figure.project-thumbnail-image * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+figure.project-thumbnail-image img {
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+figure.project-thumbnail-image figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+  padding: 30px 10px 30px 0;
+  background-color: #ffffff;
+  width: 40%;
+  -webkit-transform: translateX(-150%);
+  transform: translateX(-150%);
+}
+
+figure.project-thumbnail-image figcaption:before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 100%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 120px 0 120px 120px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+figure.project-thumbnail-image:after {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 120px 120px 120px;
+  border-color: transparent transparent rgba(255, 255, 255, 0.5) transparent;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+figure.project-thumbnail-image h3,
+figure.project-thumbnail-image p {
+  line-height: 1.5em;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  margin: 0;
+}
+
+figure.project-thumbnail-image h3 {
+  margin: 0 0 5px;
+  line-height: 1.1em;
+  font-weight: 900;
+  font-size: 1.4em;
+  opacity: 0.75;
+}
+
+figure.project-thumbnail-image p {
+  font-size: 0.8em;
+}
+
+figure.project-thumbnail-image i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 25px 35px;
+  font-size: 44px;
+  color: #ffffff;
+  opacity: 0;
+}
+
+figure.project-thumbnail-image a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+figure.project-thumbnail-image:hover img,
+figure.project-thumbnail-image.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+
+figure.project-thumbnail-image:hover:after,
+figure.project-thumbnail-image.hover:after,
+figure.project-thumbnail-image:hover figcaption,
+figure.project-thumbnail-image.hover figcaption,
+figure.project-thumbnail-image:hover i,
+figure.project-thumbnail-image.hover i {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
 }
