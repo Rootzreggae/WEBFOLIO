@@ -1,8 +1,9 @@
-
+// header
 .site-header{
   margin-top: 25px;
 }
 
+// Container flexbox que contém o logo e a list da navigation
 .flex-container {
   width: 840px;
   margin: auto;
@@ -12,17 +13,73 @@
   height: 80px;
 }
 
+// Especificamente na ul
 .flex-container ul {
   display: flex;
   }
 
-.nav-menu li {
-  padding: 5px;
-  list-style-type: none;
-}
+// Especificamente na li
+// .nav-menu li {
+//   padding: 5px;
+//   list-style-type: none;
+//   text-transform: uppercase;
+//   text-align: center;
+// }
+
+// logo
 .site-logo{
 
   width: 80px;
   height: 80px;
 
+}
+
+// experimental menu list animation
+
+.nav-menu * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nav-menu li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.7em 1.5em;
+  padding: 0;
+  text-transform: uppercase;
+}
+.nav-menu a {
+  padding: 0.3em 0;
+  color: rgb(0, 0, 0);
+  position: relative;
+  text-decoration: none;
+}
+.nav-menu a:before,
+.nav-menu a:after {
+  height: 2px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #e77a09;
+  width: 0;
+}
+.nav-menu a:before {
+  top: 0;
+  right: 0;
+}
+.nav-menu a:after {
+  bottom: 0;
+  left: 0;
+}
+.nav-menu a:hover,
+.nav-menu .current a {
+  color: #080707;
+}
+.nav-menu a:hover:before,
+.nav-menu .current a:before,
+.nav-menu a:hover:after,
+.nav-menu .current a:after {
+  width: 100%;
 }
