@@ -40,7 +40,7 @@
 // nova stuff
 
 figure.project-thumbnail-image {
-  font-family: 'PT sans', Arial, sans-serif;
+  font-family: 'PT+sans', Arial, sans-serif;
   position: relative;
   float: left;
   overflow: hidden;
@@ -167,4 +167,8 @@ figure.project-thumbnail-image.hover i {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
+}
+
+.portefolio-area {
+  margin-top: 50px;
 }
