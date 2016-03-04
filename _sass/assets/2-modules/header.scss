@@ -1,8 +1,28 @@
 
+.site-header{
+  margin-top: 25px;
+}
 
+.flex-container {
+  width: 840px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
 
+.flex-container ul {
+  display: flex;
+  }
+
+.nav-menu li {
+  padding: 5px;
+  list-style-type: none;
+}
 .site-logo{
+
   width: 80px;
   height: 80px;
-  justify-content: flex-start;
+
 }
