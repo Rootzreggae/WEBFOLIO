@@ -1,9 +1,25 @@
 .site-footer {
   display: flex;
   justify-content: center;
+  padding: 0px;
 }
 
 .site-copyright {
   margin: 150px auto 0 auto;
   font-size: 0.9em;
+  padding: 0px;
+}
+
+.site-copyright  span{
+
+  padding: 0px;
+}
+
+.site-footer h4 {
+  text-transform: uppercase;
+
+}
+
+.widget-title {
+  position: relative;
 }
