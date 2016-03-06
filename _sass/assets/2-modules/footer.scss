@@ -23,3 +23,27 @@
 .widget-title {
   position: relative;
 }
+
+// logo
+.site-logo_footer{
+  display: inline-block;
+  margin-left: 1.5em;
+  margin-top: 1.563em;
+  width: 5.000em;
+  height: 5.000em;
+
+}
+
+.social-media_footer{
+  position: absolute;
+  padding: 0;
+  width: 6.250em;
+  align-items: flex-end;
+}
+
+.social-media_footer li {
+  width: 1.563em;
+  height: 1.563em;
+  padding: 0;
+  list-style-type: none;
+    }

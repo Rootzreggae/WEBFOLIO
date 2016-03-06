@@ -1,18 +1,40 @@
 // header
 .site-header{
-  margin-top: 25px;
+  margin-top: 1.563em;
+
 }
 
 // Container flexbox que contém o logo e a list da navigation
 .flex-container {
-  width: 840px;
+  position: relative;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 5.000em;
 }
 
+.social-media{
+  display: flex;
+  margin-left: 0.625em;
+  margin-top: 3.750em;
+  flex-direction: column;
+  position: absolute;
+  padding: 0;
+  width: 4.000em;
+}
+
+.social-media li {
+  width: 1.563em;
+  height: 1.563em;
+  padding: 0;
+  list-style-type: none;
+  }
+// dar margem ao ultimo elemento da lista
+  .social-media li:last-child{
+    margin-top: 2.188em;
+  }
 // Especificamente na ul
 .flex-container ul {
   display: flex;
@@ -28,9 +50,11 @@
 
 // logo
 .site-logo{
+  margin-left: 1.5em;
+  width: 5.000em;
+  height: 5.000em;
+  float: left;
 
-  width: 80px;
-  height: 80px;
 
 }
 
@@ -82,4 +106,26 @@
 .nav-menu a:hover:after,
 .nav-menu .current a:after {
   width: 100%;
+}
+
+// esperimental, points entre lista
+
+.nav-menu li::after {
+		content: "";
+    width: 2px;
+	  height: 2px;
+    position: absolute;
+    background-color: #272B2F;
+    top: 2.000em;
+    margin-left: 1.375em;
+
+
+}
+
+.nav-menu li:first-child:before {
+	display: none;
+}
+
+.nav-menu li:last-child::after {
+	display: none;
 }
