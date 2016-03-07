@@ -40,6 +40,10 @@
   padding: 0;
   list-style-type: none;
   }
+
+  .social-media a {
+    cursor: pointer;
+  }
 // dar margem ao ultimo elemento da lista
   .social-media li:last-child{
     margin-top: 2.188em;
