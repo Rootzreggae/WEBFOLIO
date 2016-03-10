@@ -10,7 +10,7 @@ title: Design Portefolio
 email: aosparesdetres@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Communication Designer, freelance, web designer, UI/UX designer
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/WEBFOLIO/" # the subpath of your site, e.g. /blog
 url: "http://rootzreggae.github.io" # the base hostname & protocol for your site
 twitter_username: onerootzreggae
 github_username: rootzreggae
